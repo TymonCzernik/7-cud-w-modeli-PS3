@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tymon Czernik">
+    <meta name="keywords" content="PlayStation 3, PS3, Sony, gry, konsola, FAT, SLIM, Super Slim, specyfikacja">
+    <title>7 cudów modeli konsoli PlayStation 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="pasek-glowny" id="gora">
+        <header id="logo">
+            <img class="logotyp" src="resources/Playstation_logo_colour.svg.png" alt="Logo PlayStation">
+        </header>
+        <header id="baner">
+            <h1>7 cudów modeli konsoli PlayStation 3</h1>    
+        </header>
+    </div>
+        <nav id="menu">
+            <a href="index.html">Strona Główna</a>
+            <a href="https://www.psx-place.com" target="_blank">Forum PSX Place</a>
+            <a href="https://www.reddit.com/r/PS3/" target="_blank">r/PS3 na reddicie</a>
+            <a href="#stopa">Dół strony</a>
+        </nav>
+       <section class="menu-tablet">
+            <button onclick="window.location.href='#stopa'">Dół strony</button>
+            <button onclick="window.location.href='#galeria'">Galeria strony</button>
+            <button onclick="window.location.href='#specki'">Specyfikacja</button>
+        </section>
+        <section class="menu-mobile">
+            <button class="hamburger" onclick="toggleMenu()">☰ MENU</button>
+            <div id="mobileLinks" class="mobile-links">
+                <a href="index.html">Strona Główna</a>
+                <a href="#stopa">Dół strony</a>
+                <a href="https://www.psx-place.com" target="_blank">Forum PSX Place</a>
+                <a href="https://www.reddit.com/r/PS3/" target="_blank">r/PS3 na reddicie</a>
+            </div>
+</section>
+
+<script>
+    function toggleMenu() {
+        var x = document.getElementById("mobileLinks");
+        if (x.style.display === "flex") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "flex";
+        }
+    }
+</script>
+        <section class="galeria">
+            <h2 id="galeria">Galeria modeli konsoli</h2>
+            <div class="galani">
+            <img src="resources/img1.jpg" alt="Playstation 3 (model FAT)">
+            <img src="resources/img2.jpg" alt="Playstation 3 (model FAT oraz SLIM)">
+            <img src="resources/img3.jpg" alt="PlayStation 3 (model SUPER SLIM)">
+            <img src="resources/img4.jpg" alt="Playstation 3 (model FAT)">
+        </div>
+    </section>
+<div class="uklad-kolumny">
+
+    <aside class="panel-boczny">
+        <h2>Ankieta Gracza</h2>
+        <form action="#" onsubmit="alert('Wysłano formularz!'); return false;">
+            
+            <div class="pole-formularza">
+                <label for="nick">Twój Nick:</label>
+                <input type="text" id="nick" name="nick" placeholder="Wpisz ksywkę" required>
+            </div>
+
+            <div class="pole-formularza">
+                <label for="wiek">Ile masz gier na PS3?</label>
+                <input type="number" id="wiek" name="ilosc_gier" min="0" max="999">
+            </div>
+
+            <div class="pole-formularza">
+                <label for="gatunek">Ulubiony gatunek:</label>
+                <select id="gatunek" name="gatunek">
+                    <option value="akcja">Akcja</option>
+                    <option value="wyscigi">Wyścigi</option>
+                    <option value="rpg">RPG</option>
+                    <option value="inne">Inne</option>
+                </select>
+            </div>
+
+            <div class="pole-formularza">
+                <p style="margin-bottom: 5px;">Ulubiony model:</p>
+                <div class="radio-group">
+                    <label><input type="radio" name="model" value="fat" checked> FAT</label>
+                    <label><input type="radio" name="model" value="slim"> SLIM</label>
+                    <label><input type="radio" name="model" value="ss"> S.SLIM</label>
+                </div>
+            </div>
+
+            <div class="przyciski-formularza">
+                <input type="submit" value="Wyślij" class="btn">
+                <input type="reset" value="Wyczyść" class="btn btn-reset">
+            </div>
+        </form>
+    </aside>
+
+    <main class="panel-boczny">
+        <h2 class="tabela-ps3" id="specki">Specyfikacja</h2>
+        <table class="tabela-ps3">
+            <thead>
+                <tr>
+                    <th>Modele</th>
+                    <th>CECHA-CECHB</th>
+                    <th>CECHC-CECHE</th>
+                    <th>CECHG, CECHH, CECHM, CECHQ</th>
+                    <th>CECHJ, CECHK, CECHL, CECHP</th>
+                    <th>CECH 2000</th>
+                    <th>CEHC 2100, CECH 2500, CECH 3000</th>
+                    <th>CECH 4000, CECH 4200, CECH 4300</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rok premiery</td>
+                    <td>2006</td>
+                    <td>2007</td>
+                    <td>2008</td>
+                    <td>2008</td>
+                    <td>2009</td>
+                    <td>2010</td>
+                    <td>2012</td>
+                </tr>
+                <tr>
+                    <td>Litografia procesora CELL</td>
+                    <td>90nm</td>
+                    <td>90nm</td>
+                    <td>65nm</td>
+                    <td>65nm</td>
+                    <td>45nm</td>
+                    <td>45nm</td>
+                    <td>45nm</td>
+                </tr>
+                <tr>
+                    <td>Litografia procesora graficznego RSX</td>
+                    <td>90nm*</td>
+                    <td>90nm*</td>
+                    <td>90nm*</td>
+                    <td>65nm</td>
+                    <td>65nm</td>
+                    <td>40nm</td>
+                    <td>45nm/28nm</td>
+                </tr>
+                <tr>
+                    <td>Kompatybilność z grami PS2</td>
+                    <td>TAK, Hardware-owa</td>
+                    <td>TAK, Software-owa</td>
+                    <td>NIE</td>
+                    <td>NIE</td>
+                    <td>NIE</td>
+                    <td>NIE</td>
+                    <td>NIE</td>
+                </tr>
+                <tr>
+                    <td>Ilość portów USB</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Czytniki kart pamięci</td>
+                    <td>CECHA - TAK, CECHB - NIE</td>
+                    <td>TAK</td>
+                    <td>NIE</td>
+                    <td>NIE</td>
+                    <td>NIE</td>
+                    <td>NIE</td>
+                    <td>NIE</td>
+                </tr>
+                <tr>
+                    <td>Typ obudowy</td>
+                    <td>FAT</td>
+                    <td>FAT</td>
+                    <td>FAT</td>
+                    <td>FAT</td>
+                    <td>SLIM</td>
+                    <td>SLIM</td>
+                    <td>SUPER SLIM</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+</div>
+<div class="uklad-kolumny">
+    <section class="panel-boczny">
+       <iframe src="https://www.youtube.com/embed/20_2DkpvHcY?si=NtJveaiqKEXmPZbF" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+    </section>
+    <section class="lista">
+        <h2 id="naj">Najlepsze gry na PS3</h2>
+        <ul>
+            <li>The Last Of Us</li>
+            <li>Uncharted 2</li>
+            <li>MGS 4</li>
+            <li>Red Dead Redemption</li>
+            <li>LittleBigPlanet</li>
+            <li>Journey</li>
+        </ul>
+    </section>
+</div>
+<section class="panel-boczny">
+    <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2037067.154346374!2d136.30781490662278!3d35.18038927582822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188a4f8afabee7%3A0xfc4fb8ded76423a6!2sSony%20Group%20Headquarters!5e1!3m2!1spl!2spl!4v1765641412907!5m2!1spl!2spl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+    <footer id="stopa">
+        <p>Strone wykonał: Tymon Czernik, 2TA</p>
+        <a href="#gora">Powrót na górę</a>
+    </footer>
+</body>
+</html>
